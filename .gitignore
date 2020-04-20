@@ -1,0 +1,6 @@
+elm-stuff
+.cache
+dist
+node_modules
+memo.txt
+_ignore_*
