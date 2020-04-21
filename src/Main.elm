@@ -351,9 +351,7 @@ nav model =
                     ]
                     (text "Brand")
                 , el
-                    ([ style "user-select" "none"
-                     , class "nav_item"
-                     , pointer
+                    ([ class "nav_item"
                      ]
                         ++ (if model.dropDown2Open then
                                 [ below dropDown2 ]
