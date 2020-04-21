@@ -11,7 +11,7 @@
   },
   "scripts": {
     "clean": "del .\\dist\\*.*",
-    "dev:remot": "npm run clean && parcel src/index.html --public-url ./",
+    "dev:remote": "npm run clean && parcel src/index.html --public-url ./",
     "dev": "parcel src/index.html",
     "build": "npm run clean && parcel build src/index.html --public-url ./",
     "test": "elm-test"
