@@ -455,8 +455,17 @@ footer =
         , width fill
         , padding 10
 
-        -- ボーダーはelm-uiやcssファイルだと効きません
-        , style "border-top" "1px solid rgb(0, 0, 0, 0.4)"
+        -- ボーダーはcssファイルだと効きません
+        -- インラインstyleかelm-uiの関数を使います
+        -- , style "border-top" "1px solid rgb(0, 0, 0, 0.4)"
+        , Border.color <| rgba 0 0 0 0.4
+        , Border.solid
+        , Border.widthEach
+            { top = 1
+            , left = 0
+            , right = 0
+            , bottom = 0
+            }
 
         -- フォントカラーはcssでは効きません
         , Font.color <| rgba 0 0 0 0.4
